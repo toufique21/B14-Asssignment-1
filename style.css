@@ -2,8 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
-    /* max-width: 1200px;
-    justify-self: center; */
+
 }
 .center nav ul li{
     list-style: none;
@@ -58,10 +57,7 @@ h2{
     justify-self: center;
     font-size: 70px;
 }
-.afterHero{
-    /* margin: 0px 30px; */
 
-}
 .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,7 +65,6 @@ h2{
 }
 
 .card{
-    /* border: 0.1px solid black; */
     margin: 10px 0;
     height: 460px;
     width: 642px;
@@ -168,3 +163,55 @@ h1{
 #black #bigg{
     color: white;
 }
+footer{
+   background-color: #0D1B2A; 
+}
+.all{
+    height: 100px;
+    display: flex;
+}
+.logo{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    flex: 1;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.socials{
+    display: flex;
+    justify-self: center;
+    padding: 5px 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+.footer-bottom{
+    display: flex;
+    font-size: 12px;
+}
+
+.footer-bottom-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: #888888;
+    padding: 10px 0;
+}
+.footer-bottom-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: #888888;
+    padding: 10px 0;
+    gap: 30px;
+}
+
+
