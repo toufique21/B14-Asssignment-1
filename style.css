@@ -181,6 +181,9 @@ h1{
 #black #bigg{
     color: white;
 }
+#bbb .box-button{
+   border: 1px solid black; 
+}
 footer{
    background-color: #0D1B2A; 
 }
