@@ -5,7 +5,7 @@
     /* max-width: 1200px;
     justify-self: center; */
 }
-ul li{
+.center nav ul li{
     list-style: none;
 }
 .top{
@@ -14,7 +14,7 @@ ul li{
     margin: 10px 0px;
 
 }
-ul{
+.center ul{
     display: flex;
     gap: 20px;
 }
@@ -69,11 +69,12 @@ h2{
 }
 
 .card{
-    border: 1px solid black;
+    /* border: 0.1px solid black; */
     margin: 10px 0;
     height: 460px;
     width: 642px;
     border-radius: 10px;
+    box-shadow: 0.5px 1px 1px 0px black;
 }
 .image{
     border-top-right-radius: 10px;
@@ -101,5 +102,69 @@ h1{
 .price h3{
     font-size: 30px;
     justify-self: center;
-    padding: 20px 0 30px 0;
+    padding: 20px 0 5px 0;
+}
+.small{
+   font-size: 12px;
+    padding: 15px 0px 0px 0px;
+    justify-self: center; 
+}
+.options{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 150px;
+    gap: 20px;
+    
+}
+.box{
+    background-color: #fff;
+    height: 430px;
+    border: 0.2px solid #888888;
+    border-radius: 10px;
+    padding: 30px;
+}
+#black{
+    background-color: #0D1B2A;
+}
+.price-top{
+    padding: 0 0 30px 0;
+    color: #888888;
+    
+}
+#bigg{
+    color: black;
+    font-size: 52px;
+}
+
+.color-list ul{
+    padding: 30px 14px;
+
+
+}
+.color-list ul li{
+    padding: 8px 0;
+    
+}
+.color-list ul li::marker{
+    color: rgb(81, 139, 233);
+}
+.box-button{
+    border: none;
+    background-color: white;
+    border: 1px solid rgb(81, 139, 233);
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+    padding: 10px 110px;
+}
+#black .box-button{
+    background-color: rgb(81, 139, 233);
+}
+#black .color-list ul li{
+    color: white;
+}
+#black #bigg{
+    color: white;
 }
