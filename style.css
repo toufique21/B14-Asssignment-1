@@ -27,7 +27,7 @@
     padding: 10px 40px;
     border-radius: 10px;
     color: white;
-    background-color: #1D4ED8;
+    background-color: #007BFF;
 }
 
 .hero{
@@ -102,7 +102,7 @@ h1{
 }
 .topp{
     font-size: 11px;
-    color: blue;
+    color: #007BFF;
     padding: 15px 0px 15px 0px;
 }
 .low{
@@ -113,14 +113,15 @@ h1{
     padding: o 40px;
 }
 .price h3{
-    font-size: 30px;
+    font-size: 50px;
     justify-self: center;
     padding: 20px 0 5px 0;
 }
 .small{
-   font-size: 12px;
+   font-size: 16px;
     padding: 15px 0px 0px 0px;
-    justify-self: center; 
+    justify-self: center;
+    color: #666; 
 }
 .options{
     display: grid;
@@ -161,19 +162,20 @@ h1{
     
 }
 .color-list ul li::marker{
-    color: rgb(81, 139, 233);
+    color: #007BFF;
 }
 .box-button{
     border: none;
     background-color: white;
-    border: 1px solid rgb(81, 139, 233);
+    border: 1px solid #007BFF;
     border-radius: 10px;
     display: flex;
     justify-self: center;
     padding: 10px 110px;
 }
 #black .box-button{
-    background-color: rgb(81, 139, 233);
+    background-color: #007BFF;
+    color: white;
 }
 #black .color-list ul li{
     color: white;
@@ -184,6 +186,354 @@ h1{
 #bbb .box-button{
    border: 1px solid black; 
 }
+
+/* AI GENERATED STARTS */
+/*==========================================
+            EVENT SCHEDULE
+==========================================*/
+
+.event-schedule{
+    padding:100px 8%;
+    /* background:#f5f6fa; */
+    background: black;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.sub-title{
+    display:inline-block;
+    color:#2D9CDB;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.section-title h2{
+    font-size:48px;
+    margin-bottom:15px;
+    /* color:#222; */
+    color: white;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:28px;
+}
+
+/*=============================
+        GRID
+=============================*/
+
+.schedule-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+/*=============================
+        CARD
+=============================*/
+
+.schedule-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:380px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    color:white;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.schedule-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 40px rgba(0,0,0,.2);
+
+}
+
+/*=============================
+      BACKGROUND IMAGE
+=============================*/
+
+.bg-icon{
+
+    position:absolute;
+
+    width:180px;
+
+    right:-20px;
+
+    top:40px;
+
+    opacity:.12;
+
+    pointer-events:none;
+
+    transition:.4s;
+
+}
+
+.schedule-card:hover .bg-icon{
+
+    transform:scale(1.08) rotate(8deg);
+
+}
+
+/*=============================
+        TIME
+=============================*/
+
+.time-box{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.ampm{
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:5px;
+
+    text-transform:uppercase;
+
+}
+
+.time-box h2{
+
+    font-size:64px;
+
+    font-weight:800;
+
+    line-height:1;
+
+}
+
+/*=============================
+      CONTENT
+=============================*/
+
+.schedule-info{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.category{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.2);
+
+    padding:7px 15px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+
+    backdrop-filter:blur(3px);
+
+}
+
+.schedule-info h3{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+    line-height:1.2;
+
+}
+
+.schedule-info p{
+
+    font-size:16px;
+
+    line-height:26px;
+
+    margin-bottom:20px;
+
+}
+
+.schedule-info h4{
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+/*=============================
+      CARD COLORS
+=============================*/
+
+.blue{
+
+    background:#28A9E0;
+
+}
+
+.red{
+
+    background:#F04C4C;
+
+}
+
+.orange{
+
+    background:#F59E0B;
+
+}
+
+.green{
+
+    background:#27AE60;
+
+}
+
+.purple{
+
+    background:#7C4DFF;
+
+}
+
+.teal{
+
+    background:#00B8A9;
+
+}
+
+/*=============================
+      RESPONSIVE
+=============================*/
+
+@media(max-width:992px){
+
+.schedule-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.time-box h2{
+
+font-size:54px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.event-schedule{
+
+padding:80px 6%;
+
+}
+
+.section-title h2{
+
+font-size:38px;
+
+}
+
+.schedule-card{
+
+min-height:340px;
+
+padding:30px;
+
+}
+
+.bg-icon{
+
+width:140px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.schedule-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:32px;
+
+}
+
+.section-title p{
+
+font-size:15px;
+
+}
+
+.time-box h2{
+
+font-size:48px;
+
+}
+
+.schedule-info h3{
+
+font-size:24px;
+
+}
+
+.bg-icon{
+
+width:120px;
+
+right:-10px;
+
+}
+
+}
+/* AI GENERATED ENDS */
+
 footer{
    background-color: #0D1B2A; 
 }
@@ -199,20 +549,28 @@ footer{
 }
 .links{
     flex: 1;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 20px;
+    gap: 20px;
 }
 .socials{
     display: flex;
     justify-self: center;
     padding: 5px 0;
+    align-items: center;
 }
 a{
     color: white;
     text-decoration: none;
+    font-size: 15px;
 
+}
+footer hr{
+    width: 1200px;
+    justify-self: center;
+    
 }
 .footer-bottom{
     display: flex;
